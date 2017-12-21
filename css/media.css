@@ -1,7 +1,17 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1600px) {
+  /*.capabilities
+		min-height: 700px
+		background: linear-gradient(-2deg, #fff 15%, $accent-color 15%, $accent-color 85%, $dark-grey 85%)*/
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  .top-line-content {
+  .capabilities .content .item:nth-child(2) {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .top-line .content {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -27,10 +37,27 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .capabilities .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .capabilities .content .item:nth-child(2) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
   .main-menu {
     display: none;
   }
-  .top-line-content .user-name {
+  .top-line .content .user-name {
     display: none;
   }
   /**/

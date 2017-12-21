@@ -48,25 +48,20 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'Lato';
-  src: url("../fonts/lato/Lato-Bold.eot") format("eot");
-  src: url("../fonts/lato/Lato-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1600px) {
+  /*.capabilities
+		min-height: 700px
+		background: linear-gradient(-2deg, #fff 15%, $accent-color 15%, $accent-color 85%, $dark-grey 85%)*/
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  .top-line-content {
+  .capabilities .content .item:nth-child(2) {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .top-line .content {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -92,10 +87,27 @@ table {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .capabilities .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .capabilities .content .item:nth-child(2) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
   .main-menu {
     display: none;
   }
-  .top-line-content .user-name {
+  .top-line .content .user-name {
     display: none;
   }
   /**/
@@ -189,8 +201,7 @@ table {
           justify-content: center;
 }
 
-.top-line-content {
-  width: 1180px;
+.top-line .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -262,12 +273,14 @@ table {
 }
 
 .rounded-image-wrapper .rounded-image {
+  -webkit-box-shadow: inset 9px -4px 210px 41px rgba(71, 74, 92, 0.3);
+          box-shadow: inset 9px -4px 210px 41px rgba(71, 74, 92, 0.3);
+  opacity: 1;
   display: inline-block;
   height: 55px;
   width: 55px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background-image: url("../img/portrait.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-position-x: center;
@@ -330,10 +343,97 @@ table {
 }
 
 .capabilities {
-  min-height: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 490px;
   background: -webkit-linear-gradient(92deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
   background: -o-linear-gradient(92deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
   background: linear-gradient(-2deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
+}
+
+.capabilities .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.capabilities .content .item {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 300px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.capabilities .content .item:nth-child(2) {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.capabilities .content .item h3 {
+  text-transform: uppercase;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.capabilities .content .item .item-separator {
+  display: block;
+  width: 100px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #fff;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.capabilities .content .item p {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.capabilities .content .item .item-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  border-style: solid;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border-width: 3px;
+}
+
+.capabilities .content .item .item-more:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hamburger {
