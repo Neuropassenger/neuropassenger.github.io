@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Landing Page for byBTC</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<!-- НАЧАЛО ПЕРВОГО ЭКРАНА ЛЕНДИНГА -->
-	<header class="page-header">
-		<!-- Начало верхней полоски с навигацией в шапке -->
-		<nav class="top-line">
-			<div class="top-line-content">
-				<div class="top-logo">
-					<a href="#">
-						<img src="img/small_logo.png">
-					</a>
-				</div>
-				<div class="top-navigation">
-					<ul>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Оплата и доставка</a></li>
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Партнерам</a></li>
-						<li><a href="#">Войти</a></li>
-						<li><a href="#">Выйти</a></li>
-						<li><div class="rounded-image-wrapper"><div class="rounded-image"><a href="#profile"></a></div></div></li>
-					</ul>
-				</div>
-			</div>
+	<!-- МОБИЛЬНОЕ МЕНЮ -->
+		<nav class="mobile-menu">
+			<ul>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Партнерам</a></li>
+			</ul>
 		</nav>
-		<!-- Конец верхней полоски с навигацией в шапке -->
-		<!-- Начало слайдера -->
-		<!--<div class="owl-carousel">
-			<div>
-				<img src="img/big_logo.png">
-				<a href="#">Начать покупки за BTC</a>
-			</div>
-			<div>
-				<img src="img/big_logo.png">
-				<a href="#">Начать покупки за BTC</a>
-			</div>
-			<div>
-				<img src="img/big_logo.png">
-				<a href="#">Начать покупки за BTC</a>
-			</div>
-		</div>-->
-		<div class="slide">
-			<img src="img/big_logo.png">
-			<a href="#">Начать покупки</a>
-		</div>
-		<!-- Конец слайдера -->
-	</header>
+	<!-- КОНЕЦ МОБИЛЬНОГО МЕНЮ -->
+
+	<!-- НАЧАЛО ПЕРВОГО ЭКРАНА ЛЕНДИНГА -->
+		<header class="page-header">
+			<!-- Начало верхней полоски с навигацией в шапке -->
+				<nav class="top-line">
+					<div class="top-line-content">
+
+						<div class="top-logo">
+							<a href="#">
+								<img src="img/small_logo.png">
+							</a>
+						</div>
+
+						<div class="top-navigation main-menu">
+							<ul>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Партнерам</a></li>
+							</ul>
+							</div>
+
+							<!-- НАЧАЛО BURGER -->
+								<button class="hamburger hamburger--spin" type="button">
+								  <span class="hamburger-box">
+								    <span class="hamburger-inner"></span>
+								  </span>
+								</button>
+						<!-- КОНЕЦ BURGER -->
+
+						<div class="top-navigation user-menu">
+							<ul>
+								<!-- Выбрать нужный вариант в зависимости от статуса авторизации  -->
+								<li><div class="rounded-image-wrapper"><div class="rounded-image"><a href="#profile"></a></div></div></li>
+								<li class="user-name"><a href="#">Маяковский</a></li>
+								<li><a href="#">Выйти</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</nav>
+			<!-- Конец верхней полоски с навигацией в шапке -->
+
+				<!-- Место для слайдера в светлом будущем -->
+					<div class="slide">
+						<img class="big-logo" src="img/big_logo.png">
+						<!--<img class="small-logo" src="img/small_logo.png">-->
+						<a href="#">Посмотреть каталог</a>
+					</div>
+				<!-- Конец слайдера -->
+
+		</header>
+
 	<!-- КОНЕЦ ПЕРВОГО ЭКРАНА ЛЕНДИНГА -->
+		
+	<!-- ОСНОВНОЕ СОДЕРЖИМОЕ ЛЕНДИНГА -->
+		<main>
+
+		<!-- СЕКЦИЯ ВОЗМОЖНОСТИ --> 
+		<section class="capabilities">
+			
+		</section>
+		<!-- КОНЕЦ СЕКЦИИ ВОЗМОЖНОСТИ -->
+		
+		</main>
+	<!-- КОНЕЦ ОСНОВНОГО СОДЕРЖИМОГО -->
+
 	<!-- Начало подключения JavaScript -->
 	<script type="text/javascript" src="js/libs.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
