@@ -87,6 +87,11 @@ table {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .capabilities {
+    background: -webkit-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+    background: -o-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+    background: linear-gradient(-2deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+  }
   .capabilities .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -97,10 +102,12 @@ table {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .capabilities .content .item:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 70px;
     margin-bottom: 70px;
   }
@@ -110,6 +117,11 @@ table {
   .top-line .content .user-name {
     display: none;
   }
+  .catalog .content .fullwidth-menu {
+    display: none;
+  }
+  /*.about
+		background: linear-gradient(-2deg, #e7e7e7 5%, $dark-grey 5%, $dark-grey 95%, #f7f7f7 95%)*/
   /**/
 }
 
@@ -348,9 +360,9 @@ table {
   display: -ms-flexbox;
   display: flex;
   min-height: 490px;
-  background: -webkit-linear-gradient(92deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
-  background: -o-linear-gradient(92deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
-  background: linear-gradient(-2deg, #fff 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
+  background: -webkit-linear-gradient(92deg, #f7f7f7 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
+  background: -o-linear-gradient(92deg, #f7f7f7 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
+  background: linear-gradient(-2deg, #f7f7f7 10%, #58b400 10%, #58b400 90%, #474a5c 90%);
 }
 
 .capabilities .content {
@@ -371,14 +383,14 @@ table {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 300px;
+  max-width: 320px;
   min-height: 200px;
   text-align: center;
 }
 
 .capabilities .content .item:nth-child(2) {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 120px;
+  margin-left: 120px;
 }
 
 .capabilities .content .item h3 {
@@ -517,4 +529,60 @@ table {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 24px;
+}
+
+.catalog {
+  background-color: #f7f7f7;
+  padding-top: 60px;
+}
+
+.catalog .content {
+  max-width: 100%;
+}
+
+.catalog .fullwidth-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog .fullwidth-menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.catalog .fullwidth-menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Myriad Pro';
+  font-font-weight: normal;
+  font-size: 25px;
+}
+
+.catalog .fullwidth-menu ul li a:hover {
+  color: #58b400;
+}
+
+.about {
+  background: -webkit-linear-gradient(92deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
+  background: -o-linear-gradient(92deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
+  background: linear-gradient(-2deg, #e7e7e7 10%, #474a5c 10%, #474a5c 90%, #f7f7f7 90%);
+  min-height: 500px;
+}
+
+.about .content {
+  padding-top: 90px;
+  max-width: 100%;
+  color: #fff;
+}
+
+.about .content h2 {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 38px;
 }

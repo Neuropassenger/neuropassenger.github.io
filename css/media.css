@@ -37,6 +37,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .capabilities {
+    background: -webkit-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+    background: -o-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+    background: linear-gradient(-2deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+  }
   .capabilities .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -47,10 +52,12 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .capabilities .content .item:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 70px;
     margin-bottom: 70px;
   }
@@ -60,6 +67,11 @@
   .top-line .content .user-name {
     display: none;
   }
+  .catalog .content .fullwidth-menu {
+    display: none;
+  }
+  /*.about
+		background: linear-gradient(-2deg, #e7e7e7 5%, $dark-grey 5%, $dark-grey 95%, #f7f7f7 95%)*/
   /**/
 }
 
