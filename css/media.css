@@ -77,6 +77,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .catalog h2 {
+    font-size: 22px !important;
+  }
+  .catalog .items .item {
+    width: 50% !important;
+  }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -95,6 +101,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .catalog .items .item {
+    width: 100% !important;
+  }
+  .show-full-catalog {
+    font-size: 16px !important;
+  }
   /**/
 }
 

@@ -127,6 +127,12 @@ table {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .catalog h2 {
+    font-size: 22px !important;
+  }
+  .catalog .items .item {
+    width: 50% !important;
+  }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -145,6 +151,12 @@ table {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .catalog .items .item {
+    width: 100% !important;
+  }
+  .show-full-catalog {
+    font-size: 16px !important;
+  }
   /**/
 }
 
@@ -534,13 +546,40 @@ table {
 .catalog {
   background-color: #f7f7f7;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .catalog .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
 }
 
-.catalog .fullwidth-menu {
+.catalog .content h2 {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans';
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #2f313d;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #2f313d;
+  padding-bottom: 20px;
+}
+
+.catalog .content .fullwidth-menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -551,12 +590,12 @@ table {
           justify-content: center;
 }
 
-.catalog .fullwidth-menu ul li {
+.catalog .content .fullwidth-menu ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
-.catalog .fullwidth-menu ul li a {
+.catalog .content .fullwidth-menu ul li a {
   color: #000;
   text-decoration: none;
   font-family: 'Myriad Pro';
@@ -564,7 +603,85 @@ table {
   font-size: 25px;
 }
 
-.catalog .fullwidth-menu ul li a:hover {
+.catalog .content .fullwidth-menu ul li a:hover {
+  color: #58b400;
+}
+
+.catalog .content .categories {
+  margin-top: 30px;
+}
+
+.catalog .content .categories .items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.catalog .content .categories .items .item {
+  margin-top: 40px;
+  width: 33%;
+}
+
+.catalog .content .categories .items .item .product-pic {
+  margin: auto;
+  max-width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position-x: center;
+}
+
+.catalog .content .categories .items .item .product-pic a {
+  display: block;
+  height: 100%;
+  weight: 100%;
+}
+
+.catalog .content .categories .items .item h3 {
+  max-width: 250px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.catalog .content .categories .items .item span {
+  margin-top: 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.catalog .show-full-catalog {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #474a5c;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  border-style: solid;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border-width: 3px;
+}
+
+.catalog .show-full-catalog:hover {
   color: #58b400;
 }
 

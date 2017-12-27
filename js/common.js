@@ -5,4 +5,8 @@ $(document).ready(function(){
   	hamburger.toggleClass('is-active');
   	$('.mobile-menu').toggleClass('mobile-menu-active');
   });
+
+  $('.owl-carousel').owlCarousel({
+  	items: 1
+  });
 });
