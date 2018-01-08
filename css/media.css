@@ -7,6 +7,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .footer-links .content, .copyrights .content {
+    width: auto;
+  }
   .capabilities .content .item:nth-child(2) {
     margin-right: 100px;
     margin-left: 100px;
@@ -37,10 +40,18 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .capabilities {
-    background: -webkit-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
-    background: -o-linear-gradient(92deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
-    background: linear-gradient(-2deg, #f7f7f7 3%, #58b400 3%, #58b400 97%, #474a5c 97%);
+  .private-ads {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .private-ads .iphone-ads {
+    display: none;
+  }
+  .private-ads .private-ads-text {
+    max-width: 100% !important;
+  }
+  .private-ads .private-ads-text h2 {
+    text-align: center;
   }
   .capabilities .content {
     -webkit-box-orient: vertical;
@@ -52,8 +63,6 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
   .capabilities .content .item:nth-child(2) {
     margin-right: 0;
@@ -77,6 +86,20 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .footer-links .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links .content .item {
+    text-align: center !important;
+  }
+  .footer-links .content .item:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .catalog h2 {
     font-size: 22px !important;
   }

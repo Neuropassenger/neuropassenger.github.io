@@ -28,3 +28,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
