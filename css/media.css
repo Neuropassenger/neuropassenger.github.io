@@ -7,6 +7,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .private-ads .content {
+    width: auto;
+  }
   .footer-links .content, .copyrights .content {
     width: auto;
   }

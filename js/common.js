@@ -14,7 +14,7 @@ $(document).ready(function(){
   carousel.owlCarousel({
   	items: 1,
   	autoHeight: true,
-    autoplay: true,
+    autoplay: false,
     margin: 10,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
